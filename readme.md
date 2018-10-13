@@ -4,9 +4,11 @@
 Flashcards is an app that merely tells and reminds you how to achieve your dreams. Simply tap the screen and your one question will be answered.
 
 ### App Walk-though
+
+Tap the multiple choice question the you believe is the answer to the question. Once the question is succesfully answered tap the same answer again for a reminder of what the question was.
 `TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif)
 
-<img src="Flashcards.gif" width=200><br>
+<img src="http://recordit.co/V5HPyiQHsJ" width=200><br>
 
 
 ## Required
@@ -16,6 +18,6 @@ Flashcards is an app that merely tells and reminds you how to achieve your dream
 - [x] Build in logic to show the answer side when the card is tapped
 - [x] Push code to GitHub
 ## Optional
-- [ ] Toggle the flashcard between the question side and the answer side
-- [ ] Style the question and answer side of the card to better distinguish between the two sides
-- [ ] Add selectable multiple choice answers beneath the card
+- [x] Toggle the flashcard between the question side and the answer side
+- [x] Style the question and answer side of the card to better distinguish between the two sides
+- [x] Add selectable multiple choice answers beneath the card
