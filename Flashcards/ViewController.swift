@@ -22,10 +22,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         card.layer.cornerRadius = 20.0
         card.layer.shadowRadius = 15.0
-        card.layer.shadowOpacity = 0.02
-        card.clipsToBounds = true
-        questionLabel.clipsToBounds = true
-        ansLabel.clipsToBounds = true
+        card.layer.shadowOpacity = 0.2
+        
+        setBtn(btn: btnOptionOne)
+        setBtn(btn: btnOptionTwo)
+        setBtn(btn: btnOptionThree)
+        
+        setLabel(label: questionLabel)
+        setLabel(label: ansLabel)
+       
         ans = ansLabel.text
         super.viewDidLoad()
     
@@ -53,12 +58,28 @@ class ViewController: UIViewController {
         if(btn.titleLabel?.text == ans )
         {
         questionLabel.isHidden = !questionLabel.isHidden;
+        btn.layer.backgroundColor = #colorLiteral(red: 0.3586850655, green: 0.9811771373, blue: 0.5302384982, alpha: 1)
         }
         else
         {
         btn.isHidden = true;
         }
         
+    }
+    
+    func setBtn(btn: UIButton){
+          btn.layer.cornerRadius = 20.0
+          btn.layer.borderWidth = 3.0
+          btn.layer.shadowOpacity = 0.2
+          btn.layer.shadowRadius = 2.0
+          btn.layer.backgroundColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+          btn.layer.borderColor = #colorLiteral(red: 0.9682895541, green: 1, blue: 0.8618559837, alpha: 1)
+        
+    }
+    
+    func setLabel(label: UILabel){
+        label.clipsToBounds = true
+        label.layer.cornerRadius = 20.0
     }
     
     

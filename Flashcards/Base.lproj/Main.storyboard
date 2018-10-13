@@ -19,54 +19,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0nR-tE-eGB">
-                                <rect key="frame" x="24" y="49" width="326" height="255.00000000000011"/>
+                                <rect key="frame" x="24" y="80" width="326" height="255.00000000000011"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Never Give Up!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gR0-ef-viH">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.35868506550000001" green="0.9811771373" blue="0.53023849820000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <color key="textColor" red="0.98320620537558434" green="1" blue="0.96374732842037747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What is the only way to achieve your dream?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8i-pX-t6v" userLabel="Question Label">
                                         <rect key="frame" x="0.0" y="0.0" width="326" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.9742979603071924" green="1" blue="0.87496232581050959" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
+                                        <color key="backgroundColor" red="1" green="0.77305600507330663" blue="0.35270206053474129" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <color key="textColor" red="0.96522593062131057" green="1" blue="0.94587385174972705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="highlightedColor" red="0.9814292981670647" green="1" blue="0.95298031669264982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpu-Rc-3Pg">
-                                <rect key="frame" x="83" y="456" width="209" height="38"/>
+                                <rect key="frame" x="71" y="475" width="233" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Never Give Up!"/>
+                                <color key="backgroundColor" red="1" green="0.75111382462044107" blue="0.30085656778520298" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Never Give Up!">
+                                    <color key="titleColor" red="0.96553373324759584" green="1" blue="0.98535570972870856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapOptionTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k6l-7B-fuF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TX9-XP-FzT">
-                                <rect key="frame" x="83" y="348" width="209" height="55"/>
+                                <rect key="frame" x="71" y="377" width="233" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Run Away!"/>
+                                <color key="backgroundColor" red="1" green="0.75111382462044107" blue="0.30085656778520298" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Run Away!">
+                                    <color key="titleColor" red="0.96553373324759584" green="1" blue="0.98535570972870856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapOptionOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z0p-IU-Pr7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOP-co-ZQq">
-                                <rect key="frame" x="83" y="555" width="209" height="63"/>
+                                <rect key="frame" x="71" y="568" width="233" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Shutter In The Face Of Danger"/>
+                                <color key="backgroundColor" red="1" green="0.75111382462044107" blue="0.30085656778520298" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Shutter In The Face Of Danger">
+                                    <color key="titleColor" red="0.96553373324759584" green="1" blue="0.98535570972870856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapOptionThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWZ-LJ-KY8"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.96553373324759584" green="1" blue="0.98535570972870856" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
