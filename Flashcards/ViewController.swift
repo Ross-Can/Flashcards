@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+   
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var ansLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,14 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    @IBAction func didTapOnFlashcard(_ sender: Any) {
+        
+        questionLabel.isHidden = true;
+        
+    }
+    
+    
 
 }
 
