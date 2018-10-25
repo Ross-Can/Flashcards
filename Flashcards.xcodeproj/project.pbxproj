@@ -14,6 +14,7 @@
 		B80E9853217166A70054327E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B80E9851217166A70054327E /* LaunchScreen.storyboard */; };
 		B80E985E217166A80054327E /* FlashcardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E985D217166A80054327E /* FlashcardsTests.swift */; };
 		B80E9869217166A80054327E /* FlashcardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B80E9868217166A80054327E /* FlashcardsUITests.swift */; };
+		B8F1A8EA21816D7200F7E11A /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1A8E921816D7200F7E11A /* CreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B80E9864217166A80054327E /* FlashcardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlashcardsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B80E9868217166A80054327E /* FlashcardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsUITests.swift; sourceTree = "<group>"; };
 		B80E986A217166A80054327E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8F1A8E921816D7200F7E11A /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		B80E983C217166A10054327E = {
 			isa = PBXGroup;
 			children = (
+				B8F1A8E921816D7200F7E11A /* CreationViewController.swift */,
 				B80E9847217166A10054327E /* Flashcards */,
 				B80E985C217166A80054327E /* FlashcardsTests */,
 				B80E9867217166A80054327E /* FlashcardsUITests */,
@@ -258,6 +261,7 @@
 			files = (
 				B80E984B217166A10054327E /* ViewController.swift in Sources */,
 				B80E9849217166A10054327E /* AppDelegate.swift in Sources */,
+				B8F1A8EA21816D7200F7E11A /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

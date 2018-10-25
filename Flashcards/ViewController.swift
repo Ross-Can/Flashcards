@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnOptionOne: UIButton!
     @IBOutlet weak var btnOptionTwo: UIButton!
     @IBOutlet weak var btnOptionThree: UIButton!
+    @IBOutlet weak var btnAdd: UIButton!
     var ans: String?
     
     override func viewDidLoad() {
@@ -27,6 +28,7 @@ class ViewController: UIViewController {
         setBtn(btn: btnOptionOne)
         setBtn(btn: btnOptionTwo)
         setBtn(btn: btnOptionThree)
+        setBtn(btn: btnAdd)
         
         setLabel(label: questionLabel)
         setLabel(label: ansLabel)
@@ -52,6 +54,12 @@ class ViewController: UIViewController {
     
     @IBAction func didTapOptionThree(_ sender: Any) {
        checkIfAns(btn: btnOptionThree)
+    }
+    
+    func updateFlashcard(question:String, answer:String) {
+        ansLabel.text = answer
+        questionLabel.text = question
+        ans = answer
     }
     
     func checkIfAns(btn: UIButton){
@@ -80,6 +88,12 @@ class ViewController: UIViewController {
     func setLabel(label: UILabel){
         label.clipsToBounds = true
         label.layer.cornerRadius = 20.0
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let  navigationController = segue.destination as!UINavigationController
+        let creationController = navigationController.topViewController as! CreationViewController
+        creationController.flashcardsController = self
     }
     
     
