@@ -8,7 +8,7 @@ Flashcards is an app that merely tells and reminds you how to achieve your dream
 Tap the multiple choice question the you believe is the answer to the question. Once the question is succesfully answered tap the same answer again for a reminder of what the question was.
 
 
-<img src="http://recordit.co/V5HPyiQHsJ" width=200><br>
+<img src="Flashcards.gif" width=200><br>
 
 
 ## Required
