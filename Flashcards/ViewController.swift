@@ -90,10 +90,29 @@ class ViewController: UIViewController {
         label.layer.cornerRadius = 20.0
     }
     
+    func reset(){
+        btnOptionOne.isHidden = false
+        btnOptionTwo.isHidden = false
+        btnOptionThree.isHidden = false
+        questionLabel.isHidden = false
+        
+        setBtn(btn: btnOptionOne)
+        setBtn(btn: btnOptionTwo)
+        setBtn(btn: btnOptionThree)
+        setBtn(btn: btnAdd)
+        
+        setLabel(label: questionLabel)
+        setLabel(label: ansLabel)
+        
+        ans = ansLabel.text
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let  navigationController = segue.destination as!UINavigationController
         let creationController = navigationController.topViewController as! CreationViewController
         creationController.flashcardsController = self
+        creationController.questionTextField.text = questionLabel.text
+        creationController.answerTextField.text = ansLabel.text
     }
     
     

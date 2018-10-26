@@ -38,6 +38,14 @@
                                         <color key="textColor" red="0.96522593062131057" green="1" blue="0.94587385174972705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="highlightedColor" red="0.9814292981670647" green="1" blue="0.95298031669264982" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUq-fr-jd7">
+                                        <rect key="frame" x="282" y="217" width="44" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" ✏️"/>
+                                        <connections>
+                                            <segue destination="kYz-2a-Yna" kind="show" id="HrQ-P1-Dak"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -78,10 +86,10 @@
                                 <rect key="frame" x="312" y="618" width="49" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9644387364" green="0.77046579120000003" blue="0.34889549019999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <size key="titleShadowOffset" width="3" height="0.0"/>
-                                <state key="normal" title="➕">
-                                    <color key="titleColor" red="0.96443873643875122" green="0.77046579122543335" blue="0.34889549016952515" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.0" green="0.22160378886010368" blue="0.0052799526112055689" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.98934890790490937" green="1" blue="0.9571339409631836" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="kYz-2a-Yna" kind="show" id="XYa-3K-EyW"/>
@@ -182,4 +190,7 @@
             <point key="canvasLocation" x="653.60000000000002" y="134.48275862068968"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HrQ-P1-Dak"/>
+    </inferredMetricsTieBreakers>
 </document>

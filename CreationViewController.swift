@@ -34,19 +34,32 @@ class CreationViewController: UIViewController {
         
         let questionText = questionTextField.text
         let answerText =  answerTextField.text
-        flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
-        dismiss(animated: true)
+        
+        if(answerText == nil && questionText == nil || answerText!.isEmpty && questionText!.isEmpty)
+        {showError(issue: "Text fields Empty", alert: "Please fill in BOTH text fields")}
+            
+        else if(answerText == nil || answerText!.isEmpty)
+        {  showError(issue: "Text field Empty", alert: "Please fill in the ANSWER text field. Then press done." )}
+            
+        else if(questionText == nil || questionText!.isEmpty)
+        {  showError(issue: "Text field Empty", alert: "Please fill in the QUESTION text field. Then press done." )}
+            
+        else
+        {
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+            
+            flashcardsController.reset()
+            dismiss(animated: true)
+        }
+    }
+    
+    func showError(issue:String!, alert: String!){
+         let okAction = UIAlertAction(title: "Ok I'll Try again" , style: .default)
+         let alert = UIAlertController (title: issue, message: alert, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(okAction)
+        present(alert,animated: true)
     }
    
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
