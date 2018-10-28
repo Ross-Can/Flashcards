@@ -13,10 +13,13 @@ class CreationViewController: UIViewController {
     var flashcardsController: ViewController!
     @IBOutlet weak var questionTextField: UITextField!
     @IBOutlet weak var answerTextField: UITextField!
-    
+    var initialQuestion: String?
+    var intitialAnswer: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionTextField.text = initialQuestion
+        answerTextField.text = intitialAnswer
 
         // Do any additional setup after loading the view.
     }

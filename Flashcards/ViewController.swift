@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnOptionOne: UIButton!
     @IBOutlet weak var btnOptionTwo: UIButton!
     @IBOutlet weak var btnOptionThree: UIButton!
-    @IBOutlet weak var btnAdd: UIButton!
     var ans: String?
     
     override func viewDidLoad() {
@@ -28,7 +27,6 @@ class ViewController: UIViewController {
         setBtn(btn: btnOptionOne)
         setBtn(btn: btnOptionTwo)
         setBtn(btn: btnOptionThree)
-        setBtn(btn: btnAdd)
         
         setLabel(label: questionLabel)
         setLabel(label: ansLabel)
@@ -99,7 +97,6 @@ class ViewController: UIViewController {
         setBtn(btn: btnOptionOne)
         setBtn(btn: btnOptionTwo)
         setBtn(btn: btnOptionThree)
-        setBtn(btn: btnAdd)
         
         setLabel(label: questionLabel)
         setLabel(label: ansLabel)
@@ -110,9 +107,13 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let  navigationController = segue.destination as!UINavigationController
         let creationController = navigationController.topViewController as! CreationViewController
+        creationController.initialQuestion = questionLabel.text
+        creationController.intitialAnswer = ansLabel.text
         creationController.flashcardsController = self
-        creationController.questionTextField.text = questionLabel.text
-        creationController.answerTextField.text = ansLabel.text
+        
+        
+      // creationController.questionTextField.text = questionLabel.text
+      //creationController.answerTextField.text = ansLabel.text
     }
     
     
