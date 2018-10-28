@@ -54,14 +54,18 @@ class ViewController: UIViewController {
        checkIfAns(btn: btnOptionThree)
     }
     
-    func updateFlashcard(question:String, answer:String) {
+    func updateFlashcard(question:String, answer:String, choiceOne: String?, choiceTwo: String?, choiceThree: String?) {
         ansLabel.text = answer
         questionLabel.text = question
         ans = answer
+    
+        btnOptionOne.setTitle(choiceOne, for: .normal)
+        btnOptionTwo.setTitle(choiceTwo, for: .normal)
+        btnOptionThree.setTitle(choiceThree, for: .normal)
     }
     
     func checkIfAns(btn: UIButton){
-        if(btn.titleLabel?.text == ans )
+        if(btn.titleLabel?.text == ans)
         {
         questionLabel.isHidden = !questionLabel.isHidden;
         btn.layer.backgroundColor = #colorLiteral(red: 0.3586850655, green: 0.9811771373, blue: 0.5302384982, alpha: 1)
@@ -83,15 +87,24 @@ class ViewController: UIViewController {
         
     }
     
+    func showBtn(btn: UIButton){
+        if (btn.currentTitle?.isEmpty == false)
+          {btn.isHidden = false}
+        else
+        {
+            btn.isHidden = true;
+        }
+    }
+    
     func setLabel(label: UILabel){
         label.clipsToBounds = true
         label.layer.cornerRadius = 20.0
     }
     
     func reset(){
-        btnOptionOne.isHidden = false
-        btnOptionTwo.isHidden = false
-        btnOptionThree.isHidden = false
+        showBtn(btn: btnOptionOne)
+        showBtn(btn: btnOptionTwo)
+        showBtn(btn: btnOptionThree)
         questionLabel.isHidden = false
         
         setBtn(btn: btnOptionOne)
@@ -109,11 +122,13 @@ class ViewController: UIViewController {
         let creationController = navigationController.topViewController as! CreationViewController
         creationController.initialQuestion = questionLabel.text
         creationController.intitialAnswer = ansLabel.text
+        creationController.intitialChoiceOne = btnOptionOne.currentTitle
+        creationController.intitialChoiceTwo = btnOptionTwo.currentTitle
+        creationController.intitialChoiceThree = btnOptionThree.currentTitle
         creationController.flashcardsController = self
         
         
-      // creationController.questionTextField.text = questionLabel.text
-      //creationController.answerTextField.text = ansLabel.text
+      
     }
     
     

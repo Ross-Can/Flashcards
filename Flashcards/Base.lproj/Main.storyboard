@@ -171,6 +171,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="AnswerTextField" destination="kVo-cE-4m8" id="Dun-nM-UsZ"/>
+                        <outlet property="choiceOneTextfield" destination="2w1-78-p0n" id="m5f-NL-Cpf"/>
+                        <outlet property="choiceThreeTextfield" destination="rgF-8f-jcm" id="WE7-c4-5gl"/>
+                        <outlet property="choiceTwoTextfield" destination="4rV-Af-meU" id="CeG-Vf-7nD"/>
                         <outlet property="questionTextField" destination="GQz-sQ-HmP" id="n3w-wc-T2w"/>
                     </connections>
                 </viewController>
